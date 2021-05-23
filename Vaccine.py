@@ -24,7 +24,7 @@ while True:
 				age = data['sessions'][i]['min_age_limit']
 				if age == 45:
 					count+=1
-		url = 'https://maker.ifttt.com/trigger/vaccine_slot/with/key/dNaN9LxW-5xM3ymDxxrRNyUjElFedE_LUqqiMMfQ9_I'
+		url = 'https://maker.ifttt.com/trigger/event_name_here/with/key/your_IFTTT_webhook_key_here'
 		myobj = {'value1': '%s Vaccine centers and %s Slots Available for age 45+' % (count, dose)}
 		x = requests.post(url, data = myobj)
 		print(x.text)
